@@ -39,6 +39,6 @@ class App extends Route {
   }
 }
 /**
- * @description initialize  application and run application
+ * @description initialize application and run application
  */
 new App().server()
