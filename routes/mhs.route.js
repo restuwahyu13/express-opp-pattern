@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { Controller } = require('../controllers/default.controller')
+const { Controller } = require(`${process.cwd()}/controllers/default.controller`)
 
 class MhsRoute extends Controller {
   route() {

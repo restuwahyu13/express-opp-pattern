@@ -1,4 +1,4 @@
-const { Model } = require('../models/default.model')
+const { Model } = require(`${process.cwd()}/models/default.model`)
 
 class MhsController extends Model {
 
