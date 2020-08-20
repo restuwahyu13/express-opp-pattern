@@ -26,7 +26,14 @@
     "mongoose": "^5.9.26"
   },
   "devDependencies": {
+    "module-alias": "^2.2.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4"
+  },
+  "_moduleAliases": {
+    "routes": "routes",
+    "controllers": "controllers",
+    "models": "models",
+    "utils": "utils"
   }
 }

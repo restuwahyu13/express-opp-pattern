@@ -1,7 +1,6 @@
-const { Model } = require(`${process.cwd()}/models/default.model`)
+const { Model } = require('models/default.model')
 
 class MhsController extends Model {
-
   async resultsController(req, res, next) {
     const user = await super.mhs().find().lean()
     if (!user) {

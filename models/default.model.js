@@ -1,6 +1,7 @@
 /**
  * @description import all schema in your application in here
  */
+require('utils/connection')
 const { MhsSchema } = require('./mhs.model')
 
 class Model {

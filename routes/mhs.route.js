@@ -1,9 +1,10 @@
 const router = require('express').Router()
-const { Controller } = require(`${process.cwd()}/controllers/default.controller`)
+const { Controller } = require('controllers/default.controller')
 
 class MhsRoute extends Controller {
   route() {
     return [
+      router.get('/', (req, res) => res.send('hello wordl')),
       router.get('/results', super.mhs().resultsController),
       router.post('/create', super.mhs().createController),
       router.get('/result/:id', super.mhs().resultController),
